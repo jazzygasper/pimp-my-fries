@@ -15,7 +15,8 @@ section {
 h1 {
   font-family: 'lunch';
   font-size: 100px;
-  margin: 40px 0px 40px 0px;
+  padding-top: 50px;
+  margin: 0px 30px 40px 50px;
 }
 
 h2 {
@@ -66,6 +67,7 @@ a:visited {
 
 #nav-bar ul {
   padding-right: 40px;
+  width: 320px;
 }
 
 
@@ -95,7 +97,11 @@ section#top {
 }
 
 #intro {
+  height: 750px;
   background-color: #098ef3;
+  background-image: url(../assets/background-change.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
 
 #intro-content, #gallery-content {
@@ -111,6 +117,17 @@ section#top {
 
 #our-food, #events {
   background-color: #f6e5b1;
+  background-image: url(../assets/background-change02.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+#our-food {
+  height: 1100px;
+}
+
+#events {
+  height: 650px;
 }
 
 #menu-list {
@@ -118,13 +135,17 @@ section#top {
 }
 
 #gallery {
+  height: 700px;
   background-color: #098ef3;
+  background-image: url(../assets/background-change.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  color: white;
 }
 
 .mySlides {display:none}
 
-.mySlides.fade img {
-
+.mySlides.fade {
 }
 
 .slideshow-container {
@@ -134,7 +155,8 @@ section#top {
 }
 
 .slideshow-container img {
-  align-content: center;
+  display: block;
+  margin: auto;
 }
 
 .prev, .next {
@@ -144,16 +166,16 @@ section#top {
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: blue;
+  color: #098ef3;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 5px 5px 5px 5px;
+  background-color: white;
 }
 
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
 }
 
 .prev:hover, .next:hover {
