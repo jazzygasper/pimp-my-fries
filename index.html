@@ -19,7 +19,7 @@
           <ul>
             <li>John Lovell: 07724 828700</li>
             <li>Henry Lovell: 07525 010028</li>
-            <li><a href="mailto:info@wrappers-delight.co.uk">info@wrappers-delight.co.uk<a/></li>
+            <li><a href="mailto:info@wrappers-delight.co.uk">info@wrappers-delight.co.uk</a></li>
           </ul>
         </div>
 
@@ -49,84 +49,98 @@
       <section id="our-food">
         <div id="our-food-content">
           <h1>Our Food</h1>
-          <p>Our fries, each freshly made are served piping hot. The the fun begins when the customer gets to enjoy picking a special blend of toppings and delicious sauces.</p>
+          <p>Our fries, each freshly made are served piping hot. The the fun
+            begins when the customer gets to enjoy picking a special blend of
+            toppings and delicious sauces.</p>
+          <h2>Festival Specials</h2>
+          <ul id="menu-list">
+            <li>Easy Cheesy</li>
+            <li>Cheese and Gravy</li>
+            <li>The Marmighty</li>
+            <li>New Yorker</li>
+            <li>Pimp Daddy</li>
+          </ul>
           <img src="assets/menu.jpg" height="500px;">
           <img src="assets/shiny-van.jpg" height="500px;">
         </div>
       </section>
 
       <section id="gallery">
-        <h1>Gallery</h1>
-        <div class="slideshow-container">
+        <div id="gallery-content">
+          <h1>Gallery</h1>
+          <div class="slideshow-container">
 
-        <div class="mySlides fade">
-          <img src="assets/food01.jpg" style="width:50%">
-        </div>
+          <div class="mySlides fade">
+            <img src="assets/food01.jpg" style="width:50%">
+          </div>
 
-        <div class="mySlides fade">
-          <img src="assets/food02.jpg" style="width:50%">
-        </div>
+          <div class="mySlides fade">
+            <img src="assets/food02.jpg" style="width:50%">
+          </div>
 
-        <div class="mySlides fade">
-          <img src="assets/food03.jpg" style="width:50%">
-        </div>
+          <div class="mySlides fade">
+            <img src="assets/food03.jpg" style="width:50%">
+          </div>
 
-        <a class="prev" onclick="plusSlides(-1)"><</a>
-        <a class="next" onclick="plusSlides(1)">></a>
+          <a class="prev" onclick="plusSlides(-1)"><</a>
+          <a class="next" onclick="plusSlides(1)">></a>
 
-        </div>
-        <br>
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
+          </div>
+          <br>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
 
-        <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
+          <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
 
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
           }
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
+
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
           }
-          slides[slideIndex-1].style.display = "block";
-          dots[slideIndex-1].className += " active";
-        }
-        </script>
+
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+          }
+          </script>
+        </div>
       </section>
 
       <section id="events">
-        <h1>Events</h1>
-        <p>You may have seen us at some (or all!) of the following festivals:</p>
-        <ul id="festival-list">
-          <li>The Masked Ball</li>
-          <li>Glastonbury</li>
-          <li>Lovebox</li>
-          <li>Kaya</li>
-          <li>Boomtown</li>
-          <li>Wireless</li>
-          <li>Creamfeilds</li>
-          <li>Sundown</li>
-          <li>The Social</li>
-          <li>Gottwood</li>
-        </ul>
+        <div id="events-content">
+          <h1>Events</h1>
+          <p>You may have seen us at some (or all!) of the following festivals:</p>
+          <ul id="festival-list">
+            <li>The Masked Ball</li>
+            <li>Glastonbury</li>
+            <li>Lovebox</li>
+            <li>Kaya</li>
+            <li>Boomtown</li>
+            <li>Wireless</li>
+            <li>Creamfeilds</li>
+            <li>Sundown</li>
+            <li>The Social</li>
+            <li>Gottwood</li>
+          </ul>
+        </div>
       </section>
     </div>
   </body>
