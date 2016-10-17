@@ -88,8 +88,9 @@ section#top {
 
 #contact {
   float: right;
-  padding: 0px 40px 0px 0px;
+  padding-right: 10%;
   font-size: 20px;
+  text-align: right;
 }
 
 #contact li {
@@ -124,6 +125,18 @@ section#top {
 
 #our-food {
   height: 1100px;
+}
+
+#our-food h2 {
+  background-color: white;
+  width: 150px;
+  padding: 10px 10px 10px 10px;
+  transform: rotate(-4deg);
+}
+
+#menu-list li {
+  font-size: 20px;
+  padding-top: 5px;
 }
 
 #events {
@@ -168,9 +181,9 @@ section#top {
   margin-top: -22px;
   color: #098ef3;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 25px;
   transition: 0.6s ease;
-  border-radius: 5px 5px 5px 5px;
+  border-radius: 10px 10px 10px 10px;
   background-color: white;
 }
 
@@ -179,7 +192,8 @@ section#top {
 }
 
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: #098ef3;
+  color: white;
 }
 
 .dot {
