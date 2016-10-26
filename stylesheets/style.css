@@ -26,6 +26,7 @@ h2 {
 
 p {
   line-height: 1.6em;
+  padding-bottom: 10px;
 }
 
 section#banner {
@@ -41,6 +42,7 @@ section#banner {
 figure#logo {
   position: relative;
   margin: 0 auto 15px;
+  float: left;
 }
 
 section#top {
@@ -82,7 +84,7 @@ a:visited {
 }
 
 #intro {
-  height: 530px;
+  height: 580px;
   padding: 10px;
   background-color: #098ef3;
   background-image: url(../assets/background-change.png);
@@ -109,7 +111,7 @@ a:visited {
 }
 
 #our-food {
-  height: 1500px;
+  height: 1600px;
 }
 
 #our-food h2 {
@@ -124,13 +126,14 @@ a:visited {
   padding-top: 5px;
 }
 
+#menu-list {
+  list-style-type: initial;
+}
+
 #events {
   padding-bottom: 50px;
 }
 
-#menu-list {
-  list-style-type: initial;
-}
 
 #gallery {
   padding: 10px;
@@ -229,11 +232,11 @@ a:visited {
   }
 
   h2 {
-    font-size: 160%;
+    font-size: 180%;
   }
 
   p {
-    font-size: 150%;
+    font-size: 140%;
   }
 
   #contact li {
@@ -249,6 +252,10 @@ a:visited {
     background-size: cover;
   }
 
+  /*section#top {
+    height: 350px;
+  }*/
+
   img.logo {
     width: 400px;
     margin-left: 5%;
@@ -258,7 +265,7 @@ a:visited {
     float: right;
     padding-right: 10%;
     text-align: right;
-    margin-top: -150px;
+    margin-top: 100px;
   }
 
   #nav-bar a {
@@ -281,13 +288,54 @@ a:visited {
   }
 
   #nav-bar {
-    position: absolute;
-    margin-top: 88px;
+    margin-bottom: 20px;
     left: 50%;
     transform: translate(-50%, -50%);
     display: block;
     color: #333;
     font-size: 25px;
+    position: absolute;
+    bottom: 0;
   }
 
+  #intro-content, #our-food-content, #gallery-content, #events-content {
+    width: 800px;
+  }
+
+  #intro {
+    height: 680px;
+  }
+
+  #intro img {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  #our-food {
+    height: 1050px;
+  }
+
+  #our-food img {
+    display: inline;
+  }
+
+  #our-food h2 {
+    width: 200px;
+  }
+
+  .menu {
+    width: 305px;
+  }
+
+  .van {
+    width: 400px;
+  }
+
+  #gallery {
+    height: 600px;
+  }
+
+  #festival-list {
+    font-size: 140%;
+  }
 }
