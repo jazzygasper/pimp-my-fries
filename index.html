@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="stylesheets/reset.css"/>
     <link rel="stylesheet" href="stylesheets/style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   </head>
 
   <body>
@@ -37,6 +36,18 @@
             <li><a href="#events">Events</a></li>
           </ul>
         </div>
+        <script>
+        var top = $('#nav').offset().top - parseFloat($('#nav').css('marginTop').replace(/auto/, 100));
+        $(window).scroll(function (event) {
+          var y = $(this).scrollTop();
+
+          if (y >= top) {
+            $('#nav').addClass('fixed');
+          } else {
+            $('#nav').removeClass('fixed');
+          }
+        });
+        </script>
       </section>
 
       <section id="intro">
