@@ -60,7 +60,7 @@ ul {
   list-style-type: none;
 }
 
-a{
+a {
   text-decoration: none;
   color: #555555;
 }
@@ -239,10 +239,6 @@ a:visited {
     font-size: 140%;
   }
 
-  #contact li {
-    font-size: 120%;
-  }
-
   section#banner {
     height: 300px;
     background: url(../assets/banner.jpg) no-repeat;
@@ -252,9 +248,18 @@ a:visited {
     background-size: cover;
   }
 
-  /*section#top {
-    height: 350px;
-  }*/
+  #sister-links {
+    width: 150px;
+    height: 150px;
+  }
+
+  .wrappers-sister-link {
+
+  }
+
+  #contact li {
+    font-size: 120%;
+  }
 
   img.logo {
     width: 400px;

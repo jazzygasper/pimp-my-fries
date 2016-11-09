@@ -14,6 +14,10 @@
   <body>
     <div id="content">
       <section id="banner">
+        <div id="sister-links">
+          <a href="http://wrappers-delight.co.uk/" class="wrapper-sister-link"><img src="assets/link_wrappers_delight.png"></a>
+          <a href="http://portuguese-bbq.co.uk/" class="bbq-sister-link"><img src="assets/link_portuguese_bbq.png"></a>
+        </div>
       </section>
 
       <section id="top">
@@ -36,18 +40,6 @@
             <li><a href="#events">Events</a></li>
           </ul>
         </div>
-        <script>
-        var top = $('#nav').offset().top - parseFloat($('#nav').css('marginTop').replace(/auto/, 100));
-        $(window).scroll(function (event) {
-          var y = $(this).scrollTop();
-
-          if (y >= top) {
-            $('#nav').addClass('fixed');
-          } else {
-            $('#nav').removeClass('fixed');
-          }
-        });
-        </script>
       </section>
 
       <section id="intro">
