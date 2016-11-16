@@ -333,7 +333,11 @@ a:visited {
   #nav.fixed {
     position: fixed;
     top: 34%;
-}
+  }
+
+  #intro, #our-food, #gallery, #events {
+    padding: 0px 20px 0px 20px;
+  }
 
   #intro-content, #our-food-content, #gallery-content, #events-content {
     width: 800px;
@@ -370,6 +374,10 @@ a:visited {
 
   #gallery {
     height: 600px;
+  }
+
+  #events {
+    height: 400px;
   }
 
   #festival-list {
